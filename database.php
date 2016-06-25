@@ -1,5 +1,5 @@
 <?php
-/* THE GPLV3 Lincese
+/* THE GPLV3 License
  *
  * Search database.
  * Author: ZhiFeiHuang
