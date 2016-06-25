@@ -2,7 +2,7 @@
 /* THE GPLV3 Lincese
  *
  * Search database.
- * Auther: ZhiFeiHuang
+ * Author: ZhiFeiHuang
  */
  
 class database {
