@@ -6,10 +6,23 @@
  */
  
 class database {
+private $db;
+private $query;
+private $order;
 private $needle = ',';
 
 public function __construct($db) {
 	$this->db = $db;
+	$this->query = null;
+	$this->order = null;
+}
+
+public function query($str) {
+	$this->query = $str;
+}
+
+public function order($str) {
+	$this->order = $str;
 }
 
 public function search_suggestions($search, $tstruct, $conv, $conversion, $sugg=true, $offset=0, $limit=25) {
