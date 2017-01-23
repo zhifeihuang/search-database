@@ -57,7 +57,7 @@ public function search_suggestions($search, $tstruct, $conv, $conversion, $sugg=
 		$search_k = array_values($search_k);
 	}
 	
-	$query = $this->query;
+	$query = $this->query .'(';
 	foreach ($search_k as $v) {
 		$query .= ($is_string ? 'LOWER('. $v .')' : $v) . ' LIKE ? OR ';
 	}
